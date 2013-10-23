@@ -1,0 +1,25 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"${project_path}/scripts/bootstrap"
+			],
+			"name": "Compile (ana)",
+			"shell": true,
+			"working_dir": "${project_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/amazurov/dev/ana"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/amazurov/dev/note"
+		}
+	]
+}

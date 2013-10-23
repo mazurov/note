@@ -1,0 +1,4 @@
+#!/bin/sh
+
+latexmk -jobname=chib_note -pdf --outdir=build  main.tex
+#&& evince build/chib_note.pdf&

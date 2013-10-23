@@ -1,0 +1,79 @@
+% $Id: title-LHCb-ANA.tex 14593 2012-01-27 14:43:32Z uegede $
+% ===============================================================================
+% Purpose: LHCb-ANA Note title page template
+% Author:
+% Created on: 2010-10-05
+% ===============================================================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  TITLE PAGE  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+
+% Header ---------------------------------------------------
+\vspace*{-1.5cm}
+
+\hspace*{-0.5cm}
+\begin{tabular*}{\linewidth}{lc@{\extracolsep{\fill}}r}
+\ifthenelse{\boolean{pdflatex}}% Logo format choice
+{\vspace*{-2.7cm}\mbox{\!\!\!\includegraphics[width=.14\textwidth]{figs/lhcb-logo.pdf}} & &}%
+{\vspace*{-1.2cm}\mbox{\!\!\!\includegraphics[width=.12\textwidth]{figs/lhcb-logo.eps}} & &}
+ \\
+ & & LHCb-ANA-2013-YYY \\  % ID
+ & & \today \\ % Date - Can also hardwire e.g.: 23 March 2010
+ & & Version 0.9 \\
+\hline
+\end{tabular*}
+
+\vspace*{4.0cm}
+
+% Title --------------------------------------------------
+{\bf\boldmath\huge
+\begin{center}
+ Study of $\chi_b$ production at \sqs=7 and 8 TeV
+\end{center}
+}
+
+\vspace*{2.0cm}
+
+% Authors -------------------------------------------------
+\begin{center}
+I. Belyaev$^{1,2}$,
+C.~Bozzi$^3$,
+H.~Dijkstra$^1$,
+A.~Mazurov$^{1,4}$.
+\bigskip\\
+{\it\footnotesize
+$ ^1$CERN, $ ^2$ITEP, Moscow, $ ^3$INFN Sezione di Ferrara, $ ^4$Universit\`a di Ferrara\\
+}
+\end{center}
+
+\vspace{\fill}
+
+% Abstract -----------------------------------------------
+\begin{abstract}
+  \noindent
+A study of $\chi_b$ production at \lhcb is performed on data collected during 2011 and 2012, by reconstructing
+$\chi_b (1P, 2P, 3P) \rightarrow \OneS \gamma$ decays. The differential production cross sections, relative
+to the \OneS, are measured as a function of \OneS transverse momentum and rapidity. The $\chi_b \rightarrow \TwoS \gamma$ and
+ $\chi_b \rightarrow \ThreeS \gamma$ decays are also investigated. The $\chi_b(3P)$ mass is measured.
+\end{abstract}
+
+\vspace*{2.0cm}
+\vspace{\fill}
+
+\end{titlepage}
+
+
+\pagestyle{empty}  % no page number for the title
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  EOD OF TITLE PAGE  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  empty page follows the title page ----
+\newpage
+\setcounter{page}{2}
+\mbox{~}
+
+\cleardoublepage
