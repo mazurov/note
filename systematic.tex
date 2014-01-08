@@ -24,7 +24,7 @@ taken into account. Firstly, the relative proportion of spin-1 and spin-2
 states, which is kept fixed in the fit to values close to 0.5, predicted by
 theory, is varied from 0.4 to 0.7. 
 
-Tables [\ref{tab:syst:lambda1s}-\ref{tab:syst:lambda2s}] reports the relative
+Table~\ref{tab:syst:lambda_ups1s} reports the relative
 variation in percent of the $\chi_b$ yields as function of $\lambda$, the
 relative proportion of the two $\chi_b$ states, for all examined decays, in
 each bin of $\Upsilon(nS)$ transverse momentum. We take as systematic error in
@@ -42,7 +42,7 @@ Tables~\ref{tab:syst:m1p}-\ref{tab:syst:m3p}.
 Other uncertainties due to parameters taken from PDG (e.g. mass differences)
 are assumed to be negligible.
 
-\subsubsection{Uncertainties related to the data-MonteCarlo resolution difference}
+\subsubsection{Uncertainties related to the Data-MonteCarlo resolution difference}
 
 In the $\chi_b$ fits, the resolution of the Crystal Ball functions, determined
 from simulation, has been scaled by a factor 1.16 in order to account for data ---
@@ -50,12 +50,13 @@ MonteCarlo differences. This factor was obtained by fitting a histogram,
 that store the ratio between data and MonteCarlo resolution, by constant function.
 The result of fit is shown in Figure~\ref{fig:syst:ratio_data_mc_sigma}.
 
-We estimate the systematic uncertainty due to this assumption by repeating the
-fits without scaling the $\sigma$ parameter of the CB functions. Results are
-shown in Table~\ref{relevant_tables_here}.
-
 \input{pics/syst/data_sigma}
 \input{pics/syst/ratio_data_mc_sigma}
+
+We estimate the systematic uncertainty due to this assumption by repeating the
+fits with scaling the $\sigma$ parameter with maximum and minimum values of
+the scaling factor obtained from the fit in Figure~\ref{fig:syst:ratio_data_mc_sigma}.
+Results are shown in Table~\ref{tab:syst:sigma_ups1s}.
 
 
 
@@ -72,12 +73,16 @@ efficiency. A systematic uncertainty of 3\% is assigned to this effect.
 
 
 
-\input{tables/syst/lambda_ups1s}
-\input{tables/syst/lambda_ups2s}
-\input{tables/syst/m1p_ups1s}
-\input{tables/syst/m2p_ups2s}
-\input{tables/syst/m3p_ups1s}
-\input{tables/syst/m3p_ups2s}
+\input{tables/syst/ups1s}
+\input{tables/syst/ups2s}
+\input{tables/syst/ups3s}
+
+% \input{tables/syst/lambda_ups1s}
+% \input{tables/syst/lambda_ups2s}
+% \input{tables/syst/m1p_ups1s}
+% \input{tables/syst/m2p_ups2s}
+% \input{tables/syst/m3p_ups1s}
+% \input{tables/syst/m3p_ups2s}
 
 
 \subsection{\chib polarization}
@@ -123,4 +128,8 @@ particles and all possible polarization scenarios. The results  are
 shown in Tables~\ref{tab:syst:pol:chib1p_ups1s}-~\ref{tab:syst:pol:chib3p_ups3s}.
 
 \input{tables/syst/polarization}
+
+
+\input{tables/syst/fit_model}
+
 
