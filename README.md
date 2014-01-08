@@ -1,5 +1,6 @@
 # Chib production analysis note
 
+[Latest (pdf)](http://amazurov.web.cern.ch/amazurov/chib_note.pdf)
 
 ## How to build
 
