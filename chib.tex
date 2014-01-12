@@ -67,8 +67,9 @@ PDF.
 The number of CB functions and the order of the polynomial depend on the decay
 under study and are described in the section corresponding to that decay. The
 definition of CB function is similar to Eq.~\ref{eq:cb}. The $\alpha$ and $n$
-parameters of CB are fixed to the values obtained from simulation~\ref{sec:mc}
+parameters of CB are fixed to the values obtained from simulation (Section ~\ref{sec:mc})
 and are shown in Table~\ref{tab:chib:fit:tail}:
+
 
 \begin{table}[H]
 \caption{\small   The $\alpha$ and $n$ parameters of CB functions.}
@@ -84,11 +85,11 @@ $\chi_{b1,2}(3P)$ & -1.25 & 5 \\
 \label{tab:chib:fit:tail}
 \end{table}
 
-Due to the current insufficient detector energy resolution and small mass
-difference between $\chi_{b2}(jP)$ and $\chi_{b1}(jP)$ (j=1,2,3) it is too hard
-to separate $\chi_{b1}$ and $\chi_{b2}$ states by two CB functions. Thus mean,
+Due to small mass difference between $\chi_{b2}(jP)$ and $\chi_{b1}(jP)$ (j=1,2,3) 
+states and insufficient detector resolution, it is not possible 
+to fit the $\chi_{b1}$ and $\chi_{b2}$ states by two independent CB functions. Thus mean,
 width and yield values of  $\chi_{b1}$ and $\chi_{b2}$ signals are linked
-together by the following rules:
+together by the following constraints:
 
 \begin{equation}
   \begin{aligned}
@@ -98,7 +99,7 @@ N_{\chi_{b2}} = \frac{(1-\lambda)}{\lambda} N_{\chi_{b1}} \\
   \end{aligned}
 \end{equation}
 
-, where $\Delta m_{b2b1}^{PDG}$ is the corresponding PDG mass difference which
+\noindent where $\Delta m_{b2b1}^{PDG}$ is the corresponding PDG mass difference which
 is fixed in the fit. The $\lambda$ parameter depends on $p_T(\Upsilon)$ range
 and is fixed to the value that is based on the theoretical prediction discussed
 in Section~\ref{sec:ratio}. The $k$ parameter is the ratio between the widths of
@@ -115,8 +116,8 @@ from simulation~(Section~\ref{sec:mc}).
 The \Y1S could be produced in radiative decays of six \chib particles:
 $\chi_{bi}(jP) \to \Y1S \gamma$ (i=1,2; j=1,2,3). So the sum of six CB functions
 is used to determine \chib signals in these decays. The mass of \chiboneOneP
-($\mu_{\chiboneOneP}$) is a free parameter and  other parameters are linked by
-the following rules:
+($\mu_{\chiboneOneP}$) is a free parameter and  other parameters are constrained 
+by:
 
 \begin{equation}
   \begin{aligned}
@@ -137,7 +138,7 @@ $p_{T}^{\OneS}$ interval and is given in Table~\ref{tab:chib:ups1s:fit:order}.
 \input{tables/chib/ups1s_fit_order}
 
 The fit was performed in the mass interval from  9.77 \gevcc to 10.89 \gevcc.
-Figure~\ref{fig:chib:ups1s:nominal} shows the mass distribution in transverse
+Figure~\ref{fig:chib:ups1s:fit:nominal} shows the mass distribution in transverse
 momentum range $14 < p_T^{\OneS} < 40 \gevc$. In this range the fit has
 the lowest relative error of signal yields. Table~\ref{tab:chib:ups1s:nominal}
 details the corresponding fit parameters.
@@ -152,14 +153,20 @@ In the further analysis this mass was fixed to 9.892 \gevcc.
 % \input{chib/1s/pics/mass}
 
 Figure~\ref{fig:chib:ups1s:yields} illustrates the number of signal events as
-function of $\Y1S$ transverse momentum.
-Table~\ref{tab:chib:ups1s:fits} in Appendix summarizes the obtained results.
+function of $\Y1S$ transverse momentum. The \chibOneP and \chibThreeP yields
+are smoothly decreasing functions of $p_T^{\Y1S}$, as expected. The yields
+normalized by bin size and luminosity are shown in
+Figure~\ref{fig:chib:ups1s:yields_scaled}. Differences between 7 and 8 TeV
+data, due to different production cross sections, can be seen for the
+$\chi_b(1P)$ state, while they are washed out by statistical fluctuation for
+the other states. Table~\ref{tab:chib:ups1s:fits} in Appendix summarizes the
+obtained results.
 
 \input{pics/chib/ups1s_yields}
 
-Figure ~\ref{fig:chib:ups1s:yields} shows that \chibOneP and
-\chibThreeP yields are the expected smooth decreasing functions of $p_T^{\Y1S}$.
- and fluctuations are observed on the plot for \chibTwoP signal.
+A smooth variation of the $\Upsilon(1S)$ mass is seen as a function of
+transverse momentum (see Figure~\ref{fig:chib:ups1s:mean}). A systematic
+uncertainty is assigned to this effect.
 
 \input{pics/chib/ups1s_mean}
 
@@ -171,12 +178,13 @@ Figure ~\ref{fig:chib:ups1s:yields} shows that \chibOneP and
 
 The fit was performed in the mass interval from 10.16 \gevcc to 11.04 \gevcc.
 The  \chiboneTwoP peak width depends on $p_T^{\Y2S}$ interval and is fixed to
-the value obtained from simulation~\ref{sec:mc} without any scaling . The
-\chiboneThreeP peak width is fixed to \chiboneTwoP peak width scaled by 1.17.
+the value obtained from simulation (Section~\ref{sec:mc}) without any scaling .
+The \chiboneThreeP peak width is fixed to \chiboneTwoP peak width scaled by
+1.17.
 
 
- The order of background polynomial~\ref{eq:bernstein} is 3 in all intervals of
- \Y2S transverse momentum.
+ The order of background polynomial in Eqn.~\ref{eq:bernstein} is 3 in all
+ intervals of \Y2S transverse momentum.
 
 
 Figure~\ref{fig:chib:ups2s:nominal} shows the mass distribution in transverse
@@ -188,9 +196,11 @@ details the corresponding fit parameters.
 
 Table~\ref{tab:chib:ups2s:nominal} shows that the measured \chiboneTwoP mass is
 about 5 \mevcc less than the PDG value $10255.46  \pm 0.22 \pm 0.50 \mevcc$. In
-the further analysis this mass was fixed to 10.250 \gevcc, which
-was measured in $18 < p_T^{\Y2S} < 40 \gevc$ interval in merged 2011 and
-2012 data.
+the further analysis this mass was fixed to 10.250 \gevcc, which was measured
+in $18 < p_T^{\Y2S} < 40 \gevc$ interval in merged 2011 and 2012 data, and the
+systematic uncertainty on the results due to this assumption has been
+determined.
+
 
 Figure~\ref{fig:chib:ups2s:yields} shows the number of signal events as function
 of $p_T^{\Y2S}$. Table~\ref{tab:chib:ups2s:fits} in Appendix summarizes the
@@ -198,9 +208,12 @@ obtained results.
 
 \input{pics/chib/ups2s_yields}
 
-Figure ~\ref{fig:chib:ups2s:yields} shows that both \chibTwoP and
-\chibThreeP yields are smooth decreasing functions of $p_T^{\Y2S}$, as it was
-expected.
+Figure ~\ref{fig:chib:ups2s:yields_scaled} shows the yields normalized by bin
+size and luminosity. Both \chibTwoP and \chibThreeP yields are smoothly
+decreasing functions of $p_T^{\Y2S}$, as expected.
+
+The dependence of the $\chi_{b1}(2P)$ fitted mass in bins of $p_T^{\Y2S}$ is
+shown in Figure~\ref{fig:chib:ups2s:mean}.
 
 \input{pics/chib/ups2s_mean}
 
@@ -219,7 +232,7 @@ details the corresponding fit parameters.
 \input{pics/chib/ups3s_nominal}
 \input{tables/chib/ups3s_nominal}
 
-The fine resolution of \chiboneThreeP is observed, so this decay can be used
-for precise measurement of \chiboneThreeP mass. In this study the mass 
-was fixed to 10.507 \gevcc which was measured on merged 2011 and 2012 data.
+A good resolution on the \chiboneThreeP mass is observed, so this decay can be
+used for precise measurement of \chiboneThreeP mass. In this study the mass was
+fixed to 10.507 \gevcc which was measured on merged 2011 and 2012 data.
 

@@ -1,16 +1,15 @@
 \section{Systematic Uncertainties}
 \label{sec:syst}
 
-This analysis measures the fraction of $\Upsilon(nS)$ particles originating
-from $\chi_b$ decays, most systematic uncertainties cancel in the ratio and
-only residual effects need to be taken into account. Systematic uncertainties
-can be grouped according to various sources, related respectively to:
-\begin{itemize}
-\item the fit model of $\Upsilon$ and $\chi_b$ invariant masses, 
-\item the determination of the photon reconstruction efficiency, and 
-\item the unknown initial polarization of $\chi_b$ and $\Upsilon$ particles. 
-\end{itemize}
-These uncertainties will be detailed in the following. 
+Since this analysis measures the fraction of $\Upsilon(nS)$ particles
+originating from $\chi_b$ decays, most systematic uncertainties cancel in the
+ratio and only residual effects need to be taken into account. Systematic
+uncertainties can be grouped according to their contribution to the terms of
+Eqn.~\ref{eqn:master}. Systematic uncertainties on the event yields are mostly
+due to the fit model of $\Upsilon$ and $\chi_b$ invariant masses, while the
+ones on the efficiency are due to the photon reconstruction and the unknown
+initial polarization of $\chi_b$ and $\Upsilon$ particles.
+ 
 
 \subsection{Uncertainties related to the fit model}
 
@@ -19,37 +18,40 @@ distribution has been estimated by following previous
 studies~\ref{Aaij:2013yaa}. An uncertainty of 0.7\% has been assigned to the
 yields of $\Upsilon(nS)$ mesons.
 
-In the fit model of the $chi_b$ invariant masses, several sources need to be
+In the fit model of the $\chi_b$ invariant masses, several sources need to be
 taken into account. Firstly, the relative proportion of spin-1 and spin-2
 states, which is kept fixed in the fit to values close to 0.5, predicted by
-theory, is varied from 0.4 to 0.7. 
+theory, is varied from 0.3 to 0.7.
 
-Table~\ref{tab:syst:lambda_ups1s} reports the relative
-variation in percent of the $\chi_b$ yields as function of $\lambda$, the
-relative proportion of the two $\chi_b$ states, for all examined decays, in
-each bin of $\Upsilon(nS)$ transverse momentum. We take as systematic error in
-each $p_T$ bin the maximum variation of the $\chi_b$ yields with respect to the
-nominal fit.
+
+Tables~\ref{tab:syst:lambda_ups1s},\ref{tab:syst:lambda_ups2s} and
+\ref{tab:syst:lambda_ups3s} report the relative variation in percent of the
+$\chi_b$ yields as function of $\lambda$, the relative proportion of the two
+$\chi_b$ states, for all examined decays, in each bin of transverse momentum
+for $\chi_b$ decays into $\Upsilon(1S)$, $\Upsilon(2S)$ and $\Upsilon(3S)$,
+respectively. We take as systematic error in each $p_T$ bin the maximum
+variation of the $\chi_b$ yields with respect to the nominal fit.
 
 Another source of systematic is due to the variation of the $\chi_b$ masses as
-function of $p_T(\Upsilon)$, observed in Section~\ref{relevant_section_here}.
-We repeat the fits by taking the minimum and maximum values of the $\chi_b$
-masses and take the maximum difference in the yields as systematic uncertainty.
-The resulting uncertainties are reported in
-Tables~\ref{tab:syst:m1p}-\ref{tab:syst:m3p}.
-
-
-Other uncertainties due to parameters taken from PDG (e.g. mass differences)
-are assumed to be negligible.
-
-\subsubsection{Uncertainties related to the Data-MonteCarlo resolution difference}
-
+function of $p_T(\Upsilon)$, observed in Section~\ref{sec:chib}. We repeat the
+fits by taking the minimum and maximum values of the $\chi_b$ masses and take
+the maximum difference in the yields as systematic uncertainty. The resulting
+uncertainties are reported in Tables~\ref{tab:syst:m3p_ups1s},
+\ref{tab:syst:m3p_ups1s} and \ref{tab:syst:m3p_ups1s} for $\chi_b$ decays into
+$\Upsilon(1S)$, $\Upsilon(2S)$ and $\Upsilon(3S)$, respectively.
+ 
+ Other uncertainties due to parameters taken from PDG (e.g. mass differences)
+ are assumed to be negligible.
+ 
++\subsubsection{Uncertainties related to Data-MonteCarlo differences in resolution}
+ 
 In the $\chi_b$ fits, the resolution of the Crystal Ball functions, determined
-from simulation, has been scaled by a factor 1.16 in order to account for data ---
-MonteCarlo differences. This factor was obtained by fitting a histogram, 
-that store the ratio between data and MonteCarlo resolution, by constant function.
-The result of fit is shown in Figure~\ref{fig:syst:ratio_data_mc_sigma}.
-
+from simulation, has been scaled by a factor 1.17 in order to account for data
+--- MonteCarlo differences. This factor was obtained by fitting a histogram,
+that store the ratio between data and MonteCarlo resolution, by a constant
+function. The result of fit is shown in
+Figure~\ref{fig:syst:ratio_data_mc_sigma}.
+ 
 \input{pics/syst/data_sigma}
 \input{pics/syst/ratio_data_mc_sigma}
 
@@ -101,12 +103,15 @@ the unpolarized sample, a weight is calculated from the values of described
 angles in the various polarization hypotheses and the ratio of efficiencies is
 deduced for each ($m_{\chi_{b1}}$, $m_{\chi_{b2}}$) polarization combination.
 
-As an example,
-Figures~\ref{sec:syst:polarization:angles_chib11p_ups1s}-\ref{sec:syst:polarization:angles_chib21p_ups1s}
-show the angular distributions distribution in the $\chi_{b1,2}(1P) \to
-\Upsilon(1S) \gamma$ decay for unpolarized and various polarization scenarios
-for the $\chi_b$. The resulting efficiency ratios are shown in
-Figure~\ref{sec:syst:polarization:eratio_chib1p}.
+As an example, Figures~\ref{sec:syst:polarization:angles_chib11p_ups1s}
+-\ref{sec:syst:polarization:angles_chib21p_ups1s} show the angular
+distributions distribution in the $\chi_{b1,2}(1P) \to \Upsilon(1S) \gamma$
+decay for unpolarized and various polarization scenarios for the $\chi_b$. The
+resulting efficiency ratios are shown in
+Figure~\ref{sec:syst:polarization:eratio_chib1p}. The corresponding ratios for
+$\chi_{b1,2}(2P) \to \Upsilon(1S) \gamma$ decays are given in
+Figure~\ref{sec:syst:polarization:eratio_chib2p}.
+
 
 \input{pics/polarization/angles-example}
 \input{pics/polarization/eratio}
@@ -118,6 +123,13 @@ particles and all possible polarization scenarios. The results  are
 shown in Tables~\ref{tab:syst:pol:chib1p_ups1s}-~\ref{tab:syst:pol:chib3p_ups3s}.
 
 \input{tables/syst/polarization}
+
+\subsection{Summary of systematic uncertainties on the $\Upsilon$ fractions in $\chi_b \to \Upsilon \gamma$ decays}
+The systematic uncertainties determined in the previous subsections on the
+various term of Eqn.~\ref{eqn:master} give corresponding uncertainties on the
+$\Upsilon$ fraction measured in this studies. These uncertainties are recapped
+for each systematic source in
+Tables~\ref{tab:frac:ups1s_chib_model}-\ref{tab:frac:ups3s_eff}.
 
 
 \input{tables/syst/frac}
