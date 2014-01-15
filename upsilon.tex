@@ -4,12 +4,11 @@
 %% ============================================================================
 \subsection{Selection}
 \label{sec:ups:selelection}
-
 The data sample used in this analysis has been collected by \lhcb in 2011 and
 2012, at center-of-mass energies of \sqs=7\tev and 8\tev with corresponding
-integrated luminosities  1089\invpb and 2011\invpb.
+integrated luminosities 1089\invpb and 2011\invpb.
 The pre-selected event candidates were taken from microDST dedicated to
-quarkonia studies (WGBandQSelection4-1) that was processed using a 
+quarkonia studies (WGBandQSelection4--1) that was processed using a 
 stripping lines Stripping20r1 for 2011 data and Stripping20 for 2012 data.
 
 %% ============================================================================
@@ -22,13 +21,11 @@ Good track quality is ensured by requiring a $\chisq$ per degree of
 freedom ($\chisq/\rm{ndf}$) to be less then 4 for the track fit and primary
 vertex probability greater than 0.5 \%.
 The muons were required to have a transverse momentum higher than 1 \gev.
-To suppress  duplicate tracks  a the cut on Kullback-Leibler (KL)
+To suppress duplicate tracks a the cut on Kullback-Leibler (KL)
 distance~\cite{Needham:1082460} was used: only tracks with symmetrized KL distance less
-than 5000 were selected.
-The primary vertex of dimuon candidate is required to be within luminous region
+than 5000 were selected.The primary vertex of dimuon candidate is required to be within luminous region
 defined as $|z_{PV}| < 0.5 m$ and $x_{PV}^2 + y_{PV}^2 < 100 mm^2$.
-
-%% ============================================================================
+%============================================================================
 \subsubsection{Trigger}
 \label{sec:upsilon:selection:trigger}
 
@@ -74,15 +71,15 @@ Table~\ref{tab:upsilon:selection:study:summary}.
 To determine the $\Upsilon$ meson signal yields, an unbinned maximum likelihood
 fit to dimuon mass distribution has been performed. The signals have been
 modeled with the sum of three CrystalBall (CB) functions and an exponential
-function for the combinatorial background. Each of the CrystalBall functions
-corresponds to \Y1S, \Y2S and \Y3S signals and can be written in the following
-form:
+function with floating $\tau$ parameter for the combinatorial background. Each
+of the CrystalBall functions corresponds to \Y1S, \Y2S and \Y3S signals and can
+be written in the following form:
 
 \begin{equation}
 CB(x) = N \times
 \begin{cases}
-\frac{1}{\sqrt{2\pi\sigma}}\exp(-\frac{(x-\mu)^2}{2\sigma^2}) & \text{, if $\frac{x-\mu}{\sigma} > -\alpha$} \\
-\frac{1}{\sqrt{2\pi\sigma}}(\frac{n}{|\alpha|})^n \exp(-\frac{|\alpha|^2}{2})(\frac{n}{|\alpha|}-|\alpha|-\frac{x-\mu}{\sigma})^{-n} & \text{, otherwise}
+\frac{1}{\sqrt{2\pi\sigma}}\exp(-\frac{{(x-\mu)}^2}{2\sigma^2}) & \text{, if $\frac{x-\mu}{\sigma} > -\alpha$} \\
+\frac{1}{\sqrt{2\pi\sigma}}{(\frac{n}{|\alpha|})}^n \exp(-\frac{|\alpha|^2}{2}){(\frac{n}{|\alpha|}-|\alpha|-\frac{x-\mu}{\sigma})}^{-n} & \text{, otherwise}
 \end{cases}
 \label{eq:cb}
 \end{equation}
@@ -97,8 +94,8 @@ $N$, $\alpha$ and $n$ contribute to the amplitude.
 The mass of \Y1S is allowed to vary. Mass of \Y2S (\Y3S) are defined as sum of
 \Y1S mass and the value of corresponding difference between mass of
 \Y2S (\Y3S) and \Y1S. These two mass differences, named $\Delta m_{\Y2S}$ and
-$\Delta m_{\Y3S}$, are fixed in the fit to 563 \mevcc and 895 \mevcc
-correspondingly.
+$\Delta m_{\Y3S}$, are fixed in the fit to PDG~\cite{PDG2012} values 563 \mevcc
+and 895 \mevcc correspondingly.
 
 The width of the Crystal Ball function describing the \Y1S meson is allowed to
 vary, while the width of \Y2S and \Y3S mesons are constrained to the value of
@@ -133,9 +130,9 @@ Table~\ref{tab:upsilon:result:nominal} shows the fitted \Y1S mass is about
 To obtain the final numbers for $\Upsilon$ yields the fit was repeated
 independently for each of the $p_T^{\mumu}$ bins with the \OneS mass fixed to
 $9.456 \gevcc$ that was measured in the fit of joined 2011 and 2012 datasets.
-Figure \ref{fig:upsilon:result:mean_sigma} show that the fitted $\Upsilon(1S)$
+Figure~\ref{fig:upsilon:result:mean_sigma} show that the fitted $\Upsilon(1S)$
 mass varies as a function of transverse momentum, as also observed in other
-studies \cite{Aaij:2013yaa}. A systematic uncertainty is assigned due to
+studies~\cite{Aaij:2013yaa}. A systematic uncertainty is assigned due to
 this effect.
 
 Figure~\ref{fig:upsilon:result:yields} shows the number of signal events as
