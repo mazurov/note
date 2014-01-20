@@ -70,42 +70,46 @@ Table~\ref{tab:upsilon:selection:study:summary}.
 \label{sec:upsilon:fit}
 To determine the $\Upsilon$ meson signal yields, an unbinned maximum likelihood
 fit to dimuon mass distribution has been performed. The signals have been
-modeled with the sum of three CrystalBall (CB) functions and an exponential
+modeled with the sum of three double-sided CrystalBall (DSCB) functions and an exponential
 function with floating $\tau$ parameter for the combinatorial background. Each
-of the CrystalBall functions corresponds to \Y1S, \Y2S and \Y3S signals and can
+of the DSCB functions corresponds to \Y1S, \Y2S and \Y3S signals and can
 be written in the following form:
 
 \begin{equation}
-CB(x) = N \times
+DSCB(x) = N \times
 \begin{cases}
-\frac{1}{\sqrt{2\pi\sigma}}\exp(-\frac{{(x-\mu)}^2}{2\sigma^2}) & \text{, if $\frac{x-\mu}{\sigma} > -\alpha$} \\
-\frac{1}{\sqrt{2\pi\sigma}}{(\frac{n}{|\alpha|})}^n \exp(-\frac{|\alpha|^2}{2}){(\frac{n}{|\alpha|}-|\alpha|-\frac{x-\mu}{\sigma})}^{-n} & \text{, otherwise}
+\frac{1}{\sqrt{2\pi\sigma}}{(\frac{n_L}{|\alpha_L|})}^{n_L}\exp(-\frac{|\alpha_L|^2}{2}){(\frac{n_L}{|\alpha_L|}-|\alpha_L|-\frac{x-\mu}{\sigma})}^{-n_L} & \text{, if $\frac{x-\mu}{\sigma} < -\alpha_L$}\\
+\frac{1}{\sqrt{2\pi\sigma}}{(\frac{n_R}{|\alpha_R|})}^{n_R}\exp(-\frac{|\alpha_R|^2}{2}){(\frac{n_R}{|\alpha_R|}-|\alpha_R|+\frac{x-\mu}{\sigma})}^{-n_R} & \text{, if $\frac{x-\mu}{\sigma} > \alpha_R$}\\
+\frac{1}{\sqrt{2\pi\sigma}}\exp(-\frac{{(x-\mu)}^2}{2\sigma^2}) & \text{, otherwise}
 \end{cases}
 \label{eq:cb}
 \end{equation}
 
-The CB is similar to gaussian distribution, but has an asymmetric tail. This
-function has five parameters: N, $\mu$, $\sigma$, $\alpha$ and $n$, where
-parameters $\mu$ and $\sigma$ have the same meaning as for gaussian. Parameters
-$\alpha$ and $n$ describe the tail behavior: $\alpha$ controls the tail start
-and $n$ corresponds to the decreasing power of the tail. All three parameters
-$N$, $\alpha$ and $n$ contribute to the amplitude.
+The double-sided CrystalBall is similar to gaussian
+distribution, but has an asymmetric tails. This function has seven parameters:
+N, $\mu$, $\sigma$, $\alpha_L$, $n_L$, $\alpha_R$, $n_R$ where parameters $\mu$
+and $\sigma$ have the same meaning as for gaussian. Parameters $\alpha_L
+(\alpha_R)$ and $n_L (n_R)$ describe the left (right) tail behavior:
+$\alpha_{L,R}$ controls the tail start and $n_{L,R}$ corresponds to the
+decreasing power of the tail. All five parameters $N$, $\alpha_L$, $n_L$,
+$\alpha_R$ and $n_R$ contribute to the amplitude.
 
-The mass of \Y1S is allowed to vary. Mass of \Y2S (\Y3S) are defined as sum of
-\Y1S mass and the value of corresponding difference between mass of
-\Y2S (\Y3S) and \Y1S. These two mass differences, named $\Delta m_{\Y2S}$ and
-$\Delta m_{\Y3S}$, are fixed in the fit to PDG~\cite{PDG2012} values 563 \mevcc
-and 895 \mevcc correspondingly.
+% The mass of \Y1S is allowed to vary. Mass of \Y2S (\Y3S) are defined as sum of
+% \Y1S mass and the value of corresponding difference between mass of
+% \Y2S (\Y3S) and \Y1S. These two mass differences, named $\Delta m_{\Y2S}$ and
+% $\Delta m_{\Y3S}$, are fixed in the fit to PDG~\cite{PDG2012} values 563 \mevcc
+% and 895 \mevcc correspondingly.
 
-The width of the Crystal Ball function describing the \Y1S meson is allowed to
-vary, while the width of \Y2S and \Y3S mesons are constrained to the value of
-the width of the \Y1S signal, scaled by the ratio of the masses of \Y2S and \Y3S
-to the \Y1S meson.
+% The width of the Crystal Ball function describing the \Y1S meson is allowed to
+% vary, while the width of \Y2S and \Y3S mesons are constrained to the value of
+% the width of the \Y1S signal, scaled by the ratio of the masses of \Y2S and \Y3S
+% to the \Y1S meson.
 
-The  $\alpha$ and $n$ parameters are fixed to the values found in
-the simulation studies.
-The $\alpha$ value is fixed to 2 and $n$ value is fixed to 1 in each of three
-CB functions.
+The  $\alpha_{L,R}$ and $n_{L,R}$ parameters are fixed to the values extracted
+from fits to the simulated $\Upsilon \to \mumu$ decays. The $\alpha_L$ and
+$\alpha_R$ values are fixed to 1.6. The values of $n_L$  and $n_R$ are fixed
+correspondingly to 2 and 11 in each of three double-sided CrystalBall
+functions. All other parameters are allowed to vary in the fit model.
 
 %% ============================================================================
 \subsection{Fit results}
