@@ -52,7 +52,7 @@ model.
 
 To determine the $\chi_b$ signal yields, an unbinned maximum likelihood fit to
 $m(\mumu\gamma) - m(\mumu)$ has been performed. The signal has been modeled with
-a sum of Crystal Ball (CB)  functions. The background is parameterized with a
+a sum of single-sided Crystal Ball (CB)  functions. The background is parameterized with a
 product of an exponential function and a linear combination of basic Bernstein
 polynomials~\cite{Phillips:2003} with non-negative coefficients $c_{i}^2$:
 
@@ -63,12 +63,32 @@ polynomials~\cite{Phillips:2003} with non-negative coefficients $c_{i}^2$:
 Such combination results in smooth and non-negative function that can be used as
 PDF.
 
+The CrystalBall function can be written in the following form:
 
-The number of CB functions and the order of the polynomial depend on the decay
-under study and are described in the section corresponding to that decay. The
-definition of CB function is similar to Eq.~\ref{eq:cb}. The $\alpha$ and $n$
-parameters of CB are fixed to the values obtained from simulation (Section ~\ref{sec:mc})
-and are shown in Table~\ref{tab:chib:fit:tail}:
+\begin{equation}
+CB(x) = N \times
+\begin{cases}
+\frac{1}{\sqrt{2\pi\sigma}}\exp(-\frac{{(x-\mu)}^2}{2\sigma^2}) & \text{, if $\frac{x-\mu}{\sigma} > -\alpha$} \\
+\frac{1}{\sqrt{2\pi\sigma}}{(\frac{n}{|\alpha|})}^n \exp(-\frac{|\alpha|^2}{2}){(\frac{n}{|\alpha|}-|\alpha|-\frac{x-\mu}{\sigma})}^{-n} & \text{, otherwise}
+\end{cases}
+\label{eq:cb}
+\end{equation}
+
+The CB is similar to gaussian distribution, but has an asymmetric tail. This
+function has five parameters: N, $\mu$, $\sigma$, $\alpha$ and $n$, where
+parameters $\mu$ and $\sigma$ have the same meaning as for gaussian. Parameters
+$\alpha$ and $n$ describe the tail behavior: $\alpha$ controls the tail start
+and $n$ corresponds to the decreasing power of the tail. All three parameters
+$N$, $\alpha$ and $n$ contribute to the amplitude.
+
+The number of CrystalBall functions and the order of the polynomial depend on
+the decay under study and are described in the section corresponding to that
+decay.
+
+
+The $\alpha$ and $n$
+parameters of CB are fixed to the values obtained from simulation~(\Cref{sec:mc})
+and are shown in~\Cref{tab:chib:fit:tail}:
 
 
 \begin{table}[H]
@@ -101,15 +121,20 @@ N_{\chi_{b2}} = \frac{(1-\lambda)}{\lambda} N_{\chi_{b1}}
 \end{equation}
 
 \noindent where $\Delta m_{\chi_{b1,2}(jP)}^{PDG}$ is the corresponding PDG
-mass difference which is fixed in the fit;
-$\Delta m_{\chi_{b1,2}(3P)}^{theory}$ is fixed to theoretical predicted mass
-difference in 13 \mev. The $\lambda$ parameter depends on $p_T(\Upsilon)$ range
-and is fixed to the value that is based on the theoretical prediction discussed
-in Section~\ref{sec:ratio}. The $k$ parameter is the ratio between the widths
-of $\chi_{b1}$ and $\chi_{b2}$ signals. The $k$ values are fixed to $1.05$ for
-$\chi_b(1P)$  and to 1 for $\chi_b(1P)$ and $\chi_b(2P)$ signals. To reduce
-errors the width of each CB function ($\sigma$) is fixed to the value obtained
+mass difference which is fixed in the fit; $\Delta
+m_{\chi_{b1,2}(3P)}^{theory}$ is fixed to theoretical predicted mass difference
+in 13 \mev. The $\lambda$ parameter depends on $p_T(\Upsilon)$ range and is
+fixed to the value that is based on the theoretical prediction discussed in
+Section~\ref{sec:ratio}. The $k$ parameter is the ratio between the widths of
+$\chi_{b1}$ and $\chi_{b2}$ signals. The $k$ values are fixed to $1.05$ for
+$\chi_b(1P)$  and to 1 for $\chi_b(1P)$ and $\chi_b(2P)$ signals. To reduce fit
+errors, the width of each CB function ($\sigma$) is fixed to the value obtained
 from simulation~(Section~\ref{sec:mc}).
+
+As was said in introduction (\Cref{sec:introduction}) the \chibThreeP  was
+recently observed and the mass of this meson is not well known.
+So in this study this mass is fixed to the value measured in
+\Cref{sec:chib:ups3s:fit} (~10.508\gevcc).
 
 %% ============================================================================
 \subsection{The \texorpdfstring{\chib}{xb} yields in
