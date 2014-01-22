@@ -11,16 +11,6 @@
 % For two column text, add "twocolumn" as an option to the document
 % class. Also uncomment the two "onecolumn" and "twocolumn" lines
 % around the title page below.
-\usepackage{float}    %
-\usepackage{rotating}  %
-\usepackage{graphpap}  %
-\usepackage{mathrsfs}
-\usepackage{multirow}  %
-\usepackage{cancel}    %
-\usepackage{bm}
-\usepackage{tabularx}
-\usepackage{verbatim}
-\usepackage[percent]{overpic}
 
 % Variables that controls behaviour
 \usepackage{ifthen} % for conditional statements
@@ -38,10 +28,31 @@
 
 \input{preamble}
 
-\newcommand{\systpol}{\ensuremath{\mathrm{\,(syst.pol)}}\xspace}
+% ===========================================================================
+% My packages, commands, ...
+% ===========================================================================
 
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{rotating}  %
+\usepackage{graphpap}  %
+\usepackage{mathrsfs}
+\usepackage{multirow}  %
+\usepackage{cancel}    %
+\usepackage{bm}
+% \usepackage{tabularx}
+\usepackage{verbatim}
+\usepackage[percent]{overpic}
 \usepackage{longtable} % only for template; not usually to be used in PAPERs
 \usepackage{cleveref}
+
+\input{symbols-def} 
+\newcommand{\systpol}{\ensuremath{\mathrm{\,(syst.pol)}}\xspace}
+% ===========================================================================
+
 
 \begin{document}
 \numberwithin{equation}{section}
