@@ -1,8 +1,4 @@
 {
-	"settings": {
-		"spell_check": true,
-		"color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme"
-	},
 	"build_systems":
 	[
 		{
@@ -19,7 +15,11 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "/home/amazurov/dev/note"
+			"path": "."
 		}
-	]
+	],
+	"settings":
+	{
+		"spell_check": true
+	}
 }

@@ -28,6 +28,7 @@ ENTRY
     month
     note
     DOI
+    url
     number
     organization
     pages
@@ -405,6 +406,13 @@ FUNCTION {format.DOI}
 { DOI empty$
     { ""}
     { "doi:~\href{http://dx.doi.org/" doi * "}{" * doi * "}" *}
+  if$
+}
+
+FUNCTION {format.url}
+{ url empty$
+    { ""}
+    { "~\href{" url * "}{" * url * "}" *}
   if$
 }
 
@@ -877,6 +885,20 @@ FUNCTION {article}
     { format.articlenodoi}
     { format.articledoi}
   if$
+}
+
+FUNCTION {electronic}
+{  output.bibitem
+   format.btitle "title" output.check
+   format.url output
+   fin.entry
+}
+
+FUNCTION {private}
+{  output.bibitem
+   format.authors output
+   "Private communication" output.nonnull
+   fin.entry
 }
 
 FUNCTION {book}

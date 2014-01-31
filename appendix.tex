@@ -1,8 +1,14 @@
-
 \clearpage
-
-{\noindent\bf\Large Appendices}
 \appendix
+\phantomsection
+\addcontentsline{toc}{section}{Appendices}
+% \setcounter{secnumdepth}{0}
+\section*{Appendices}
+% \setcounter{secnumdepth}{2}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\numberwithin{table}{subsection}
+\numberwithin{figure}{subsection}
+% {\noindent\bf\Large Appendices}
 \input{a-upsilon}
 \input{a-chib-ups1s-fits}
 \input{a-chib-ups2s-fits}
