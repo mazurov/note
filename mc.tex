@@ -27,30 +27,31 @@ compared with the corresponding simulated distributions.
 \input{pics/mc/vsdata}
 
 
-The agreement is generally very good except the distribution of photon
-transverse momentum~(\Cref{fig:mc:datavsmc:gamma}). Imperfect  distribution of
-photon transverse momentum can be explained by sPlot behavior in case when this
-technique is applied on variables that affect the background form. In our study
-the background in the fit depends on the photon transverse momentum, so the
-mismatch with simulation was expected. Some discrepancy observed in figures for
-\chibThreeP decay can be caused by large systematic uncertainties for this
-decay due to the low signal to background ratio.
+The agreement is generally very good except for the distribution of photon
+transverse momentum~(\Cref{fig:mc:datavsmc:gamma}). This is due to the sPlot
+technique, when applied on variables that affect the background shape. In our
+study the background in the fit depends on the photon transverse momentum,
+hence a mismatch between data and simulation is expected. Other discrepancies
+observed in the distributions for \chibThreeP decays are possibly due a poor
+signal to background ratio, which translates into large systematic
+uncertainties in the sWeights
+
 
 % =============================================================================
 \subsection{Selection efficiencies}
 \label{sec:mc:eff}
 
 The invariant mass difference distributions of matched MC-true events in the
-\chib simulation are shown in~\Cref{fig:mc:eff:nominal}. The left tails are
-almost flat at these plots, so in the \chib fit model for real data, described
-in~\Cref{sec:chib:fit}, the events corresponding to these tails are matched as
-background. Therefore, the number of \chib events for efficiency calculation
-was decided to obtain from the fit that count events in tails as a background.
-In this fit the signal is described by CrystalBall function and the background
-is a product of first order polynomial and exponential. The number of
-$\Upsilon$ events is obtained by counting all matched MC-true $\Upsilon$
-events.
-
+\chib simulation are shown in~\Cref{fig:mc:eff:nominal}. The flat left tails
+are due to photons which, although being correctly associated to the χ decay,
+are poorly reconstructed in the calorimeter (due to e.g. cracks, spillover,
+etc.). In principle, these tails could be modeled in our fit to signal, but in
+practice they will not be distinguishable from background. Therefore, the
+number of \chib events for efficiency calculation is not determined by simple
+event counting but from a fit where the tails are considered as background. In
+this fit the signal is described by CrystalBall function and the background is
+a product of first order polynomial and exponential. The number of $\Upsilon$
+events is obtained by counting all matched MC-true $\Upsilon$ events.
 
 \input{pics/mc/nominal_fits}
 
