@@ -1,3 +1,7 @@
+# Changelog v3.1
+
+Updated tables with fit parameters of chib decays to Y(1S) and Y(2S) (Tables 3.5 and 3.6). In this version the mass of chib isn't fixed.
+
 # Changelog v3.0
 
 All comments from Zhenwei and Marco have been taken into account.

@@ -6,9 +6,14 @@
 			[
 				"${project_path}/scripts/bootstrap"
 			],
-			"name": "Compile (ana)",
+			"name": "Compile (note)",
 			"shell": true,
-			"working_dir": "${project_path}"
+			"working_dir": "${project_path}",
+			"variants": [
+			        { "cmd": ["xdg-open build/chib_note.pdf&"],
+			          "name": "Run"
+			        }
+			  ]
 		}
 	],
 	"folders":
