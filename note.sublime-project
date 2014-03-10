@@ -8,12 +8,17 @@
 			],
 			"name": "Compile (note)",
 			"shell": true,
-			"working_dir": "${project_path}",
-			"variants": [
-			        { "cmd": ["xdg-open build/chib_note.pdf&"],
-			          "name": "Run"
-			        }
-			  ]
+			"variants":
+			[
+				{
+					"cmd":
+					[
+						"xdg-open build/chib_note.pdf&"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "${project_path}"
 		}
 	],
 	"folders":
@@ -21,6 +26,10 @@
 		{
 			"follow_symlinks": true,
 			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/amazurov/dev/thesis"
 		}
 	],
 	"settings":
