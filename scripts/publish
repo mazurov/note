@@ -1,6 +1,12 @@
 #!/bin/sh
-TARGET="/afs/cern.ch/user/a/amazurov/www"
+VERSION=$(cat ./VERSION)
+NAME="chib_note_v${VERSION}.pdf"
+
 SOURCE="./build/chib_note.pdf"
-cp $SOURCE $TARGET
-echo "File '$SOURCE' copied to '$TARGET'"
-echo "Url: http://cern.ch/amazurov/chib_note.pdf"
+TARGET_WWW="/afs/cern.ch/user/a/amazurov/www/${NAME}"
+TARGET_LOCAL="./build/${NAME}"
+cp $SOURCE $TARGET_LOCAL
+echo "File '$SOURCE' copied to '$TARGET_LOCAL'"
+cp $SOURCE $TARGET_WWW
+echo "File '$SOURCE' copied to '$TARGET_WWW'"
+echo "Url: http://cern.ch/amazurov/${NAME}"
