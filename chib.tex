@@ -182,6 +182,10 @@ between the masses of \chiboneThreeP and \chiboneOneP, where the mass of
 \chiboneThreeP was taken from the measurement performed in this 
 thesis~(Section~\ref{sec:chib:ups3s:fit}). The parameters  $\Delta
 m_{\chi_{b1}(2P)}^{PDG}$ and $\Delta  m_{\chi_{b1}(3P)}$ are fixed in the fit.
+The  \chiboneOneP peak width depends on $p_T^{\Y1S}$ interval and in each bin is fixed to
+the value obtained from simulation (Section~\ref{sec:mc}) scaled by 1.16. 
+The scaling parameter is obtained by comparing data and simulation fits
+in high $p_T^{\Y1S}$ ranges with $\lambda=0.5$.
 
 The order of the background polynomial in~\Cref{eq:bernstein} depends on the
 $p_{T}^{\OneS}$ interval and is given in~\Cref{tab:chib:ups1s:fit:order}.
@@ -238,6 +242,36 @@ Figure~\ref{fig:chib-1s:m1p} shows how the measured mass depends on this ratio
 \input{pics/chib/ups1s_mean}
 \input{pics/chib/ups1s_m1p}
 
+\subsubsection{Model based on the study with converted photons}
+This section shows results of the fits, where the ratio between
+$\chiboneOneP$ and $\chiboneOneP$ yields is constrained with the ratio obtained
+in the study with converted photons~\cite{Lespinasse:1664279} (very preliminary
+results). \Cref{tab:chib:converted_ratio} shows the ratio measured in that study as function
+of $p_T^{\Y1S}$. \Cref{fig:chib:ups1s:conv} 
+
+\input{tables/chib/converted_ratio}
+
+\Cref{fig:chib:ups1s:conv} and \Cref{tab:chib:ups1s:conv_fits} present fits  and 
+fits parameters where the gaussian external constraint is applied on  the value of $\lambda$ parameter.
+The mean and sigma parameters of the gaussian are taken from \Cref{tab:chib:converted_ratio}.
+
+\input{pics/chib/ups1s_converted_fits}
+\input{tables/chib/ups1s_conv_fits}
+
+\Cref{fig:chib:ups1s:conv_mean} shows that in $p_T^{\Y1S} > 14 \gevc$ range the
+mass of $\chiboneOneP$ is consistent with the PDG value. In the same ranges the
+width of $\chiboneOneP$ signal is in agreement with the simulation results
+(\Cref{tab:mc:chib3p_ups3s:fits}). In the lower transverse momentum ranges the
+width is fixed to the width obtained in simulation, since the fit is not stable in that
+regions, and the observed $\chiboneOneP$ mass is around 6 \mevc lower than the
+PDG value.
+
+\input{pics/chib/ups1s_conv_mean}
+
+The systematic uncertainty of $\chibOneP$ yield is around 10\%. The source of
+this large uncertainty is due to the signal width which previously was fixed to
+the simulation width scaled by 1.6. Another source is the different $\lambda$
+value.
 
 %% ===========================================================================
 \subsection{\texorpdfstring{\chib}{xb} yields in
