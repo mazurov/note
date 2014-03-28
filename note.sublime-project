@@ -15,9 +15,17 @@
 					[
 						"xdg-open build/chib_note.pdf&"
 					],
-					"name": "Run"
+					"name": "Run",
+					"windows":
+    				{
+        				"cmd": ["start","build/chib_note.pdf"]
+    				}
 				}
 			],
+			"windows":
+    		{
+        		"cmd": ["cmd","/c","${project_path}/scripts/bootstrap"]
+    		},
 			"working_dir": "${project_path}"
 		}
 	],
@@ -26,10 +34,6 @@
 		{
 			"follow_symlinks": true,
 			"path": "."
-		},
-		{
-			"follow_symlinks": true,
-			"path": "/home/amazurov/dev/thesis"
 		}
 	],
 	"settings":
