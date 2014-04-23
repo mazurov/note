@@ -37,8 +37,9 @@ Table~\ref{tab:chib:selection:photons}:
 \input{tables/chib/selection_photons}
 
 To separate decays into different $\Upsilon$ channels, cuts on dimuon invariant mass are 
-applied as shown in Table~\ref{tab:chib:selection:window}:
+applied as shown in \Cref{fig:ups:mass_win} and \Cref{tab:chib:selection:window}:
 
+\input{pics/upsilon/mass_win}
 \input{tables/chib/selection_window}
 
 To avoid \Y2S and \Y3S mixing contamination, the mass ranges of the \Y2S and \Y3S are
@@ -87,7 +88,7 @@ as a PDF.
 The CrystalBall function can be written in the following form:
 
 \begin{equation}
-CB(x) = N \times
+CB(x) = 
 \begin{cases}
 \frac{1}{\sqrt{2\pi\sigma}}\exp(-\frac{{(x-\mu)}^2}{2\sigma^2}) & \text{, if $\frac{x-\mu}{\sigma} > -\alpha$} \\
 \frac{1}{\sqrt{2\pi\sigma}}{(\frac{n}{|\alpha|})}^n \exp(-\frac{|\alpha|^2}{2}){(\frac{n}{|\alpha|}-|\alpha|-\frac{x-\mu}{\sigma})}^{-n} & \text{, otherwise}
@@ -96,7 +97,7 @@ CB(x) = N \times
 \end{equation}
 
 As already mentioned, the CB is similar to a gaussian distribution, but has an asymmetric tail. This
-function has five parameters: N, $\mu$, $\sigma$, $\alpha$ and $n$, where
+function has five parameters: $\mu$, $\sigma$, $\alpha$ and $n$, where
 parameters $\mu$ and $\sigma$ have the same meaning as for gaussian. Parameters
 $\alpha$ and $n$ describe the tail behavior: $\alpha$ controls the tail start
 and $n$ corresponds to the decreasing power of the tail. 
@@ -216,6 +217,14 @@ distributed around zero, with a standard deviation of 1.
 nicely agrees with the PDG value $9892.78 \pm 0.26 \pm 0.31 \mevcc$. In
 the following, this mass was fixed to 9.887 \gevcc which is the value 
 measured on the combined 2011 and 2012 datasets in the range $6<p_T^{\Y1S}<40\gevc$.
+
+In this study was observed that the background to signal ratio\footnote{ The
+ratio B/S is estimated  from the equation $\sigma(S) = 1/\sqrt{S} \times
+\sqrt{1 + B/S}$. } for \chibThreeP signal  is about 1.6 times
+larger for 2012 data then for 2011 data. The multiplicity cuts like cuts on
+SPD, cuts on number of long tracks were examined, but failed to find the reason
+for this difference.
+
 
 
 \Cref{fig:chib:ups1s:yields} illustrates the number of signal events as
