@@ -84,7 +84,7 @@ parameter. Each DSCB function corresponds to one $\Upsilon(nS)$ signal respectiv
 and can be written in the following form:
 
 \begin{equation}
-DSCB(x) = N \times
+DSCB(x) = 
 \begin{cases}
 \frac{1}{\sqrt{2\pi\sigma}}{(\frac{n_L}{|\alpha_L|})}^{n_L}\exp(-\frac{|\alpha_L|^2}{2}){(\frac{n_L}{|\alpha_L|}-|\alpha_L|-\frac{x-\mu}{\sigma})}^{-n_L} & \text{, if $\frac{x-\mu}{\sigma} < -\alpha_L$}\\
 \frac{1}{\sqrt{2\pi\sigma}}{(\frac{n_R}{|\alpha_R|})}^{n_R}\exp(-\frac{|\alpha_R|^2}{2}){(\frac{n_R}{|\alpha_R|}-|\alpha_R|+\frac{x-\mu}{\sigma})}^{-n_R} & \text{, if $\frac{x-\mu}{\sigma} > \alpha_R$}\\
@@ -95,7 +95,7 @@ DSCB(x) = N \times
 
 The double-sided CrystalBall is similar to a gaussian
 distribution, but has asymmetric tails. This function has seven parameters:
-the number of events N, $\mu$, $\sigma$, $\alpha_L$, $n_L$, $\alpha_R$, $n_R$ where parameters $\mu$
+the number of events $\mu$, $\sigma$, $\alpha_L$, $n_L$, $\alpha_R$, $n_R$ where parameters $\mu$
 and $\sigma$ have the same meaning as for gaussian. Parameters $\alpha_L
 (\alpha_R)$ and $n_L (n_R)$ describe the left (right) tail behavior:
 $\alpha_{L,R}$ controls the tail start and $n_{L,R}$ corresponds to the
