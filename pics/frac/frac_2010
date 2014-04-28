@@ -5,7 +5,7 @@
   \begin{picture}(80,60)
     %% =======================================================================
     \put(0,0){
-      \includegraphics*[width=75mm, height=60mm]{results/ups1s_old}
+      \includegraphics*[width=75mm, height=60mm]{frac/ups1s_old}
     }
     \put(2,15){\begin{sideways}\Y1S fraction, \% \end{sideways}}
     \put(40,0){$p_T^{\Y1S} \left[\gevc\right]$}
@@ -25,9 +25,7 @@
   \end{picture}
   }
   \caption{\small
-    Fraction of $\Y1S$ originated from \chibOneP decays in the specified
-    $p_T^{\Y1S}$ ranges compared to the previous results. Outer error bars show
-    statistical and systematics errors, inner error bars --- only statistical
-    errors. }
-  \label{fig:results_2010}
+    Fracton of $\Upsilon(1S)$ mesons originated from \chibOneP decays (statistical
+    errors only}
+  \label{fig:frac_2010}
 \end{figure}
