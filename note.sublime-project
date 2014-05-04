@@ -17,22 +17,31 @@
 					],
 					"name": "Run",
 					"windows":
-    				{
-        				"cmd": ["c:/Program Files (x86)/Evince-2.32.0.145/bin/evince.exe" ,"build/chib_note.pdf"]
-    				}
+					{
+						"cmd":
+						[
+							"c:/Program Files (x86)/Evince-2.32.0.145/bin/evince.exe",
+							"build/chib_note.pdf"
+						]
+					}
 				}
 			],
 			"windows":
-    		{
-        		"cmd": ["cmd","/c","${project_path}/scripts/bootstrap.bat"]
-    		},
+			{
+				"cmd":
+				[
+					"cmd",
+					"/c",
+					"${project_path}/scripts/bootstrap.bat"
+				]
+			},
 			"working_dir": "${project_path}"
 		}
 	],
 	"folders":
 	[
 		{
-			"follow_symlinks": true,
+			"follow_symlinks": false,
 			"path": "."
 		}
 	],

@@ -3,6 +3,9 @@ VERSION=$(cat ./VERSION)
 NAME="chib_note_v${VERSION}.pdf"
 
 SOURCE="./build/chib_note.pdf"
+
+if
+
 TARGET_WWW="/afs/cern.ch/user/a/amazurov/www/${NAME}"
 TARGET_LOCAL="./build/${NAME}"
 cp $SOURCE $TARGET_LOCAL
