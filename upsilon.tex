@@ -8,7 +8,7 @@ The data sample used in this analysis has been collected by \lhcb in 2011 and
 2012, at center-of-mass energies of \sqs=7\tev and 8\tev with corresponding
 integrated luminosities 1089\invpb and 2011\invpb.
 The pre-selected event candidates were taken from microDST dedicated to
-quarkonia studies (WGBandQSelection4--1) that was processed using a 
+quarkonia studies (WGBandQSelection4--1) that was processed using a
 stripping lines Stripping20r1 for 2011 data and Stripping20 for 2012 data.
 
 %% ============================================================================
@@ -25,10 +25,10 @@ cut on the Kullback-Leibler~\cite{Needham:1082460} (KL) distance was used: only
 tracks with symmetrized KL distance larger than 5000 were selected\footnote{The
 KL distance measures the difference between PDFs that describe track
 parameters. If the distance is small then two tracks are likely to be
-clones.}.The common vertex of the dimuon candidate is required to be within the 
+clones.}.The common vertex of the dimuon candidate is required to be within the
 luminous region, defined as $|z_{PV}| < 0.5 m$ and $x_{PV}^2 + y_{PV}^2 < 100
-mm^2$, where $z$ is the beam axis, $x$ and $y$ are the horizontal and vertical directions 
-in the plane perpendicular to the beam axis.  
+mm^2$, where $z$ is the beam axis, $x$ and $y$ are the horizontal and vertical directions
+in the plane perpendicular to the beam axis.
 %============================================================================
 \subsubsection{Trigger}
 \label{sec:upsilon:selection:trigger}
@@ -44,12 +44,12 @@ than 900 hits).
 The second level is the HLT1 trigger, where the event candidates were required to
 pass the Hlt1DiMuonHighMass line.
 This line triggers events with  two well reconstructed tracks  which have hits
-in the muon system  that have a transverse momentum greater than 500\mevc,  
+in the muon system  that have a transverse momentum greater than 500\mevc,
 a momentum greater than 6\gevc, which are originating from a common vertex with
 an invariant mass greater than 2.7\gevcc.
 
 At the last HLT2 level the event needs to be accepted by the HLT2DiMuonB line.
-This line confirms the HLT1 decision by using better reconstructed tracks, 
+This line confirms the HLT1 decision by using better reconstructed tracks,
 and requires the invariant mass of the dimuon pair to be larger than 4.7\gevcc.
 
 %% ============================================================================
@@ -65,7 +65,7 @@ Network algorithm (ProbNN). This algorithm takes into account various
 information such as the RICH particle identification criteria, the muon
 reconstruction quality and its compatibility with a minimum ionising particle in the
 calorimeters. In this study a cut on  ProbNN value
-greater than $0.5$ is applied. 
+greater than $0.5$ is applied.
 
 The criteria for  $\Upsilon$ selection are summarized in
 Table~\ref{tab:upsilon:selection:study:summary}.
@@ -84,7 +84,7 @@ parameter. Each DSCB function corresponds to one $\Upsilon(nS)$ signal respectiv
 and can be written in the following form:
 
 \begin{equation}
-DSCB(x) = 
+DSCB(x) =
 \begin{cases}
 \frac{1}{\sqrt{2\pi\sigma}}{(\frac{n_L}{|\alpha_L|})}^{n_L}\exp(-\frac{|\alpha_L|^2}{2}){(\frac{n_L}{|\alpha_L|}-|\alpha_L|-\frac{x-\mu}{\sigma})}^{-n_L} & \text{, if $\frac{x-\mu}{\sigma} < -\alpha_L$}\\
 \frac{1}{\sqrt{2\pi\sigma}}{(\frac{n_R}{|\alpha_R|})}^{n_R}\exp(-\frac{|\alpha_R|^2}{2}){(\frac{n_R}{|\alpha_R|}-|\alpha_R|+\frac{x-\mu}{\sigma})}^{-n_R} & \text{, if $\frac{x-\mu}{\sigma} > \alpha_R$}\\
@@ -99,7 +99,7 @@ the number of events $\mu$, $\sigma$, $\alpha_L$, $n_L$, $\alpha_R$, $n_R$ where
 and $\sigma$ have the same meaning as for gaussian. Parameters $\alpha_L
 (\alpha_R)$ and $n_L (n_R)$ describe the left (right) tail behavior:
 $\alpha_{L,R}$ controls the tail start and $n_{L,R}$ corresponds to the
-decreasing power of the tail. 
+decreasing power of the tail.
 
 In all DSCB functions, the  $\alpha_{L,R}$ and $n_{L,R}$ parameters are fixed to the values extracted
 from fits to the simulated $\Upsilon \to \mumu$ decays. The $\alpha_L$ and
@@ -110,10 +110,10 @@ to 2 and 11 respectively. All other parameters are allowed to vary in the fit mo
 \subsection{Fit results}
 \label{sec:upsilon:result}
 
-Figure~\ref{fig:upsilon:result:nominal} presents the result of the fit 
+Figure~\ref{fig:upsilon:result:nominal} presents the result of the fit
 described in the previous section. The fit was performed in the dimuon
 transverse momentum interval $ 6 < p_T^{\mumu} < 40 \gevc$.
-Table~\ref{tab:upsilon:result:nominal} shows the obtained parameters values. 
+Table~\ref{tab:upsilon:result:nominal} shows the obtained parameters values.
 
 \input{pics/upsilon/result_nominal}
 \input{tables/upsilon/result_nominal}
@@ -129,7 +129,7 @@ Table~\ref{tab:upsilon:result:nominal} shows the obtained parameters values.
 \Cref{fig:upsilon:result:mean_sigma} shows  the fitted $\Upsilon(1S)$
 mass differs by 5 \mevcc from the PDG value $9460.30 \pm  0.26$ \mevcc and
 varies as a function of transverse momentum, as also observed in other
-studies~\cite{Aaij:2013yaa}. 
+studies~\cite{Aaij:2013yaa}.
 
 Figure~\ref{fig:upsilon:result:yields} shows the number of signal events as
 function of dimuon transverse momentum. Table~\ref{tab:upsilon:result:fits} in
@@ -142,4 +142,3 @@ case~\cite{LHCb-PAPER-2011-036,Aaij:2013yaa}.
 
 
 \input{pics/upsilon/result_yields}
-
