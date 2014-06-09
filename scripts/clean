@@ -1,4 +1,4 @@
 #!/bin/sh
 
-latexmk -jobname=chib_note -pdf --outdir=build -c main.tex
+./scripts/latexmk -jobname=chib_note -pdf --outdir=build -c main.tex
 ./scripts/bootstrap

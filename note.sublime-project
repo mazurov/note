@@ -41,8 +41,11 @@
 	"folders":
 	[
 		{
-			"follow_symlinks": false,
 			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/afs/cern.ch/user/a/amazurov/Dev/latest"
 		}
 	],
 	"settings":
